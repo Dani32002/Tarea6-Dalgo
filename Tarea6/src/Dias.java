@@ -24,7 +24,7 @@ public class Dias {
         for (int i = 0; i < preN.length; i++) n.add(Integer.parseInt(preN[i]));
         String set = lr.readLine();
         Set<Set<Integer>> m = new HashSet<>();
-        while (set != ""){
+        while (!set.equals("")){
             Set<Integer> set2 = new HashSet<>();
             String[] preSet = set.split(" ");
             for (int i = 0; i < preSet.length; i++) set2.add(Integer.parseInt(preSet[i]));
@@ -33,7 +33,7 @@ public class Dias {
         }
         String set3 = lr.readLine();
         Set<Set<Integer>> P = new HashSet<>();
-        while (set3 != ""){
+        while (!set3.equals("")){
             Set<Integer> set2 = new HashSet<>();
             String[] preSet = set3.split(" ");
             for (int i = 0; i < preSet.length; i++) set2.add(Integer.parseInt(preSet[i]));

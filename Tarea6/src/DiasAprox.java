@@ -18,7 +18,7 @@ public class DiasAprox {
         for (int i = 0; i < preN.length; i++) n.add(Integer.parseInt(preN[i]));
         String set = lr.readLine();
         Set<Set<Integer>> m = new HashSet<>();
-        while (set != ""){
+        while (!set.equals("")){
             Set<Integer> set2 = new HashSet<>();
             String[] preSet = set.split(" ");
             for (int i = 0; i < preSet.length; i++) set2.add(Integer.parseInt(preSet[i]));
