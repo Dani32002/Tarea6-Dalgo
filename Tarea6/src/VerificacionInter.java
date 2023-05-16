@@ -1,72 +1,37 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.Arrays;
 import java.util.HashSet;
 import java.util.Set;
 
 public class VerificacionInter {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-    int[][] grafo = new int[5][5];
+        VerificacionInter algoritmo = new VerificacionInter();
+        BufferedReader lr = new BufferedReader(new InputStreamReader(System.in));
+        String num_vertices = lr.readLine();
+        String cota = lr.readLine();
+        String num_calles = lr.readLine();
 
-    int[] l0 = new int[5];
-    l0[0] = 1;
-    l0[1] = 0;
-    l0[2] = 0;
-    l0[3] = 1;
-    l0[4] = 1;
-
-    int[] l1 = new int[5];
-    l1[0] = 0;
-    l1[1] = 1;
-    l1[2] = 1;
-    l1[3] = 1;
-    l1[4] = 0;
-
-    int[] l2 = new int[5];
-    l2[0] = 0;
-    l2[1] = 1;
-    l2[2] = 1;
-    l2[3] = 0;
-    l2[4] = 0;
-
-    int[] l3 = new int[5];
-    l3[0] = 1;
-    l3[1] = 1;
-    l3[2] = 0;
-    l3[3] = 1;
-    l3[4] = 0;
-
-    int[] l4 = new int[5];
-    l4[0] = 1;
-    l4[1] = 0;
-    l4[2] = 0;
-    l4[3] = 0;
-    l4[4] = 1;
-
-    grafo[0] = l0;
-    grafo[1] = l1;
-    grafo[2] = l2;
-    grafo[3] = l3;
-    grafo[4] = l4;
-
-
-    int x = 10;
-
-    Set<Integer> v = new HashSet<Integer>();
-
-    v.add(0);
-    v.add(1);
-    v.add(2);
-    v.add(3);
-    v.add(5);
-    
-
-
-    boolean resp = VerificacionIntersecciones(grafo, x, v);
-
-    System.out.println(resp);
+        int[][] grafo1 = new int[Integer.parseInt(num_vertices)][Integer.parseInt(num_vertices)];
+        for (int i = 0; i<Integer.parseInt(num_calles); i++){
+            String[] calle = lr.readLine().split(",");
+            grafo1[Integer.parseInt(calle[0])][Integer.parseInt(calle[1])] = 1;
+            grafo1[Integer.parseInt(calle[1])][Integer.parseInt(calle[0])] = 1;
+        }
+        String[] vertices_ver_str = lr.readLine().split(",");
+        Set<Integer> vertices_ver = new HashSet<Integer>();
+        for (String v: vertices_ver_str){
+            vertices_ver.add(Integer.parseInt(v));
+        }
+       
+        
+    System.out.println(algoritmo.VerificacionIntersecciones(grafo1, Integer.parseInt(cota), vertices_ver));
     }
 
-    public static boolean VerificacionIntersecciones(int[][] grafo, int x, Set<Integer> v){
+    public boolean VerificacionIntersecciones(int[][] grafo, int x, Set<Integer> v){
 
         /*Se verifica que el numero de interesecciones sea menor o igual a la cota ingresada por parámetro
          * y que el el tamaño del conjunto de vertices sea menor o igual al numero de vértices del grafo de netrada para ver si es subgrafo, 
