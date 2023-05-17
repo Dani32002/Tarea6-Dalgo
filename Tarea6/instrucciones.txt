@@ -1,8 +1,19 @@
-Algoritmo de Verificación Problema 1:
+# Algoritmo de Verificación Problema 1:
 
+Para el problema 1, el que habla acerca del menor número de intersecciones que cubra todas las calles, en la carpeta de pruebas tenemos 
+dos archivos txt para probar su algoritmo de verficación asociado. El primer número se refiere al número de intersecciones que hay,
+el segundo número se refiere a la cota superior del problema de verificación, la tercera linea se refiere al número de calles que hay
+y en las siguientes n líneas, donde n es el numero de calles, tenemos las calles representadas con dos números separados por comas por ej:
+2,3 esto se refiere a que hay una calle entre la intersección 2 y 3, para finalizar, la última linea es una lista separada por comas
+que representa el conjunto de intersecciones(vértices) que voy a verificar.
 
+En la carpeta de pruebas se ve ejemplificado todo lo dicho en los txt de Prueba1P1 y Prueba2P1, también en GrafoP1.jpg se puede ver 
+un ejemplo gráfico del grafo utilizado para las pruebas.
 
-Algoritmo de Verificación Problema 2:
+Entonces para probar hay que ir al archivo VerificacionInter.java ejecutarlo y en la consola pegar el caso de prueba y este retorna
+true o false según sea el caso.
+
+# Algoritmo de Verificación Problema 2:
 
 Este programa funciona con entrada estandar por consola.
 Para utilizarlo debe ejecutar el archivo de la carpeta src con nombre Dias.java
@@ -16,7 +27,7 @@ a la posible solución, estos deben estar entre los conjuntos de la familia del 
 una linea en blanco.
 4. Ingrese el numero que representa la cota maxima para hallar la solución. Posteriormente ponga enter para empezar
 la ejecución.
-A continuación puede ver un ejemplo de entrada y salida.
+## A continuación puede ver un ejemplo de entrada y salida.
 
 1 2 3 4 5 6             Estudiantes
 1 2 3                   familia
@@ -33,11 +44,34 @@ true                    Salida
 Salida:
 La salida es un booleano en consola representando la respuesta del problema de verificación asociado.
 
-Algoritmo de Verificación Problema 3:
+#Algoritmo de Verificación Problema 3:
+## Instrucciones archivo Main.java
+
+El archivo Main.java es el que resuelve el problema de verificación del problema 3 de la tarea.
+Para probar el algoritmo implementado en el archivo, la entrada consiste en un archivo .txt
+con la siguiente estructura: La primera línea del archivo son n números separados por espacio,
+estos números representan el conjunto de amigos; en la siguiente línea debe ir el número que 
+indique la cantidad de parejas con conflicto para que posteriormente en las siguientes líneas
+esten las parejas, es decir, dos números separados por espacios; las siguientes dos líneas 
+corresponden a los grupos a verificar, en cada línea deben ir los números de los amigos que 
+representan el grupo separados por espacios; por último, la línea final debe indicar el número 
+de la cota superior.
+
+### Un archivo válido puede ser el siguiente:
+
+0 1 2 3 4 5 6 7 8 9 10
+3
+3 5
+2 10
+4 7
+0 1 2 3 4 10
+5 6 7 8 9
+2
+
+La respuesta de este algortimo debe es: True
 
 
-
-Algoritmo Aproximado Problema 2:
+# Algoritmo Aproximado Problema 2:
 
 Este problema funciona con entrada estandar por consola.
 Para utilizar este algoritmo debe ejecutar DiasAprox.java
@@ -46,7 +80,7 @@ Las entradas son (siguiendo las precondiciones del problema de optimización):
 2. Se debe ingresar la familia de subconjuntos de la entrada 1. siendo cada linea un conjunto y los numeros
 separados por un espacio. 
 Debe poner un enter vacio para empezar la ejecución.
-A continuación puede ver un ejemplo de la ejecución:
+## A continuación puede ver un ejemplo de la ejecución:
 1 2 3 4
 4 2
 1 2
@@ -60,7 +94,7 @@ Salida:
 La salida son los conjuntos seleccionados de la familia ingresada que cubren todo el conjunto de estudiantes y que
 son una aproximación a la cantidad minima de subconjuntos.
 
-BONO: Algoritmo de Grafos Problema 2:
+# BONO: Algoritmo de Grafos Problema 2:
 
 Este problema funciona con entrada estandar por consola.
 Para utilizar este algoritmo debe ejecutar DiasGrafos.java
@@ -69,7 +103,7 @@ Las entradas son (siguiendo las precondiciones del problema de optimización):
 2. Se debe ingresar la familia de subconjuntos de la entrada 1. siendo cada linea un conjunto y los numeros
 separados por un espacio. 
 Debe poner un enter vacio para empezar la ejecución.
-A continuación puede ver un ejemplo de la ejecución:
+## A continuación puede ver un ejemplo de la ejecución:
 1 2 3 4    
 4 2
 1 2
@@ -82,3 +116,5 @@ A continuación puede ver un ejemplo de la ejecución:
 Salida:
 La salida son los conjuntos seleccionados de la familia ingresada que cubren todo el conjunto de estudiantes y que
 son una aproximación a la cantidad minima de subconjuntos.
+
+

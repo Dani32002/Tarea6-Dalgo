@@ -54,7 +54,7 @@ public class DiasGrafos {
         // los que sean viables. Hace este proceso hasta vaciar la fila.
         while (!fila.isEmpty()) {
             Set<Set<Integer>> actual = fila.poll();
-            if (valid(m, n, actual) && viable(actual, z)) return actual;
+            if (sat(m, n, actual, z)) return actual;
             List<Set<Set<Integer>>> sucesores = sucesores(actual, m);
             for (Set<Set<Integer>> s: sucesores) {
                 if (viable(s, z)) fila.add(s);
@@ -62,6 +62,11 @@ public class DiasGrafos {
         }
 
         return null;
+    }
+
+
+    public boolean sat(Set<Set<Integer>> m, Set<Integer> n, Set<Set<Integer>> actual, int z) {
+        return valid(m, n, actual) && viable(actual, z);
     }
 
     // Esta función encuentra todos los sucesores a un estado dado, busca los conjuntos que todavia no tiene en la respuesta y
