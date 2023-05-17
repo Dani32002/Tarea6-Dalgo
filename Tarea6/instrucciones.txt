@@ -1,0 +1,84 @@
+Algoritmo de Verificación Problema 1:
+
+
+
+Algoritmo de Verificación Problema 2:
+
+Este programa funciona con entrada estandar por consola.
+Para utilizarlo debe ejecutar el archivo de la carpeta src con nombre Dias.java
+Las entradas que debe dar son (Siguiendo las precondiciones)
+1. En una linea, los numeros del conjunto que representan a los estudiantes.
+2. En las siguientes lineas ingrese los conjuntos de numeros que representan a los estudiantes
+cada uno en una linea diferente con los numeros separados por espacios. Al finalizar el ingreso
+de los subconjuntos debe dejar una linea vacia. Esta sera la familia de subconjuntos de el parametro 1.
+3. De la misma manera que se ingresó la familia de conjuntos, haga lo mismo pero con los conjuntos pertenecientes
+a la posible solución, estos deben estar entre los conjuntos de la familia del parametro 2. Al finalizar, ingrese
+una linea en blanco.
+4. Ingrese el numero que representa la cota maxima para hallar la solución. Posteriormente ponga enter para empezar
+la ejecución.
+A continuación puede ver un ejemplo de entrada y salida.
+
+1 2 3 4 5 6             Estudiantes
+1 2 3                   familia
+4 5                     familia
+6                       familia
+
+1 2 3                   Posible
+4 5                     Posible
+6                       Posible
+
+3                       Cota
+true                    Salida
+
+Salida:
+La salida es un booleano en consola representando la respuesta del problema de verificación asociado.
+
+Algoritmo de Verificación Problema 3:
+
+
+
+Algoritmo Aproximado Problema 2:
+
+Este problema funciona con entrada estandar por consola.
+Para utilizar este algoritmo debe ejecutar DiasAprox.java
+Las entradas son (siguiendo las precondiciones del problema de optimización):
+1. Se debe ingresar en una sola linea los numeros que representan a los estudiantes separados por espacio.
+2. Se debe ingresar la familia de subconjuntos de la entrada 1. siendo cada linea un conjunto y los numeros
+separados por un espacio. 
+Debe poner un enter vacio para empezar la ejecución.
+A continuación puede ver un ejemplo de la ejecución:
+1 2 3 4
+4 2
+1 2
+3
+4
+2 3 4  
+
+[1 2 ]
+[2 3 4 ]
+Salida:
+La salida son los conjuntos seleccionados de la familia ingresada que cubren todo el conjunto de estudiantes y que
+son una aproximación a la cantidad minima de subconjuntos.
+
+BONO: Algoritmo de Grafos Problema 2:
+
+Este problema funciona con entrada estandar por consola.
+Para utilizar este algoritmo debe ejecutar DiasGrafos.java
+Las entradas son (siguiendo las precondiciones del problema de optimización):
+1. Se debe ingresar en una sola linea los numeros que representan a los estudiantes separados por espacio.
+2. Se debe ingresar la familia de subconjuntos de la entrada 1. siendo cada linea un conjunto y los numeros
+separados por un espacio. 
+Debe poner un enter vacio para empezar la ejecución.
+A continuación puede ver un ejemplo de la ejecución:
+1 2 3 4    
+4 2
+1 2
+3
+4
+2 3 4 
+
+[1 2 ]
+[2 3 4 ]
+Salida:
+La salida son los conjuntos seleccionados de la familia ingresada que cubren todo el conjunto de estudiantes y que
+son una aproximación a la cantidad minima de subconjuntos.
