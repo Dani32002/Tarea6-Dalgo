@@ -1,0 +1,16 @@
+### Instrucciones archivo Main.java ###
+
+El archivo Main.java es el que resuelve el problema de verificación del problema 3 de la tarea. Para probar el algoritmo implementado en el archivo, la entrada consiste en un archivo .txt con la siguiente estructura: La primera línea del archivo son n números separados por espacio, estos números representan el conjunto de amigos; en la siguiente línea debe ir el número que indique la cantidad de parejas con conflicto para que posteriormente en las siguientes líneas esten las parejas, es decir, dos números separados por espacios; las siguientes dos líneas corresponden a los grupos a verificar, en cada línea deben ir los números de los amigos que representan el grupo separados por espacios; por último, la línea final debe indicar el número de la cota superior.
+
+# Un archivo válido puede ser el siguiente:
+
+0 1 2 3 4 5 6 7 8 9 10
+3
+3 5
+2 10
+4 7
+0 1 2 3 4 10
+5 6 7 8 9
+2
+
+La respuesta de este algortimo debe es: True
